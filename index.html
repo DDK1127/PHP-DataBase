@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TKUEATS 飲料點餐系統｜淡江大學資料庫概論期末報告</title>
+	<meta name="description" content="飲料點餐系統｜淡江大學資料庫概論期末報告，希望順利通關" />
+	<meta name="author" content="112dbb12"/>
+
+	<!-- 網頁 ICON -->
+	<link rel="icon" type="image/png" href="assets/images/favicon/favicon.png" />
+
+	<!-- Bootstrap & 相關插件載入 -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/magnific-popup.css" rel="stylesheet" type="text/css">
+
+	<!-- 樣式表 -->
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<div class="preloader-wrapper">
+		<div class="loader"></div>
+	</div>
+
+	<header class="header-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="main-nav">
+						<!-- 網站標誌（請注意CSS間距） -->
+						<a href="index.html" class="logo">
+							<img src="assets/images/logo.png" alt="inox" width="55%"/>
+						</a>
+
+						<!-- 常駐選單 -->
+						<ul class="nav">
+							<li><a href="#top">首頁</a></li>
+							<li class="submenu">
+								<a href="javascript:;">關於團隊</a>
+								<ul>
+									<li><a href="database/final_report.pdf">專案報告</a></li>
+									<li><a href="#team">開發人員</a></li>
+								</ul>
+							</li>
+							<li><a class="contact-btn" href="database/login.html">登入後台</a></li>
+						</ul>
+						<a class="menu-trigger">
+							<span>選單</span>
+						</a>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- 首頁展示圖框 -->
+	<div class="welcome">
+		<div class="welcome-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<div class="welcome-text">
+							<h1>跟自家泡的茶一樣好喝</h1>
+							<p>堅持每一個成就好茶的程序，用真功夫製作好茶飲，使用高級茶。</p>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="slider-position">&nbsp;</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider-wrapper">
+				<div class="base">
+					<div class="prev">
+						<i class="fa fa-angle-left"></i>
+					</div>
+					<div class="next">
+						<i class="fa fa-angle-right"></i>
+					</div>
+				</div>
+				<div class="owl-carousel">
+					<div class="item">
+						<div class="img">
+							<img src="assets/images/photos/welcome/1.jpg" alt="">
+						</div>
+						<div class="text">
+							<h5>從巷弄間發跡，珍珠奶茶手搖茶飲專家。</h5>
+							<p>從供應泡沫紅茶、早午餐、餐廳的食品原物料公司，到放眼全世界的手搖茶飲品牌。</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<img src="assets/images/photos/welcome/2.jpg" alt="">
+						</div>
+						<div class="text">
+							<h5>細節簡單做、簡單的細節重覆做</h5>
+							<p>從單純的零售買賣到提供一站購足整合式服務，從區域經營到全球化的品牌策略規劃</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<img src="assets/images/photos/welcome/3.jpg" alt="">
+						</div>
+						<div class="text">
+							<h5>當茶遇見詩，十二韻</h5>
+							<p>一詩闡述茶事獨具的深度及珍貴，從茶的產地、摘採、培火、茶香、茶色、烹水、喫茶、茶存放等，藉以闡述茶在作者心中的重要性。</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<img src="assets/images/photos/welcome/4.jpg" alt="">
+						</div>
+						<div class="text">
+							<h5>洋溢著溫暖的家鄉情懷</h5>
+							<p>台灣浩瀚的大海，蜿蜒的山脈交織成華麗的等高線，揮灑成濃郁獨特的茶香氣息</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<img src="assets/images/photos/welcome/5.jpg" alt="">
+						</div>
+						<div class="text">
+							<h5>茶職人致真完美的堅持而創立品牌</h5>
+							<p>茶香是一種生命流動的氣息，時間沈澱在茶葉脈絡裡，釀出了十二韻的百般回味</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 店面三大特色簡介 -->
+	<section class="half-parallax">
+		<div class="parallax-image"></div>
+		<div class="parallax-items">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="parallax-item">
+							<i class="fa fa-hourglass-o"></i>
+							<h5 class="feature-title">職人手藝</h5>
+							<p>一本用心泡好茶的初衷，傳遞喝好茶的幸福，始終堅持「手搖」傳統，並提供「客製化」的專業服務。</p>
+							<a class="dark-btn" href="#">
+								<span class="show-btn">立即點餐</span>
+								<span class="hide-btn">就像現泡</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="parallax-item">
+							<i class="fa fa-connectdevelop"></i>
+							<h5 class="feature-title">匠心工法</h5>
+							<p>恰到好處的混搭比例讓食材彼此相得益彰，打造別開生面的美味饗宴。</p>
+							<a class="dark-btn" href="#">
+								<span class="show-btn">立即點餐</span>
+								<span class="hide-btn">就像現泡</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="parallax-item">
+							<i class="fa fa-flag-o"></i>
+							<h5 class="feature-title">純粹至上</h5>
+							<p>各有獨到的風味與口感，以提供消費者全方位、多樣化的手搖飲料推薦選擇。</p>
+							<a class="dark-btn" href="#">
+								<span class="show-btn">立即點餐</span>
+								<span class="hide-btn">就像現泡</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section padding-bottom-120">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+					<div class="left-heading">
+						<h2 class="section-title dotted">專業精神</h2>
+					</div>
+					<div class="left-text">
+						<p class="dark">做茶二十餘年的功夫底氣，一直以來，都堅持把每個細節重複做且追求著做到最好，這過程不疲憊，職人專業精神，永遠沒有止休</p>
+						<p class="margin-bottom-40">對我們來說專業，是努力的呈現，堅持的成果1克1克的斤斤計較、小心秤量熟練手勢講求的不只是確實，更是精準</p>
+						<ul class="margin-bottom-40">
+							<li>吃茶三千專屬靜謐空間</li>
+							<li>充滿著人文氣息的台式服務</li>
+							<li>傳遞吃茶三千的心意與溫情</li>
+						</ul>
+
+						<div class="row page-gallery-wrapper">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+								<a href="assets/images/photos/home/1.jpg" class="page-gallery">
+									<img src="assets/images/photos/home/1.jpg" alt="">
+								</a>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+								<a href="assets/images/photos/home/2.jpg" class="page-gallery">
+									<img src="assets/images/photos/home/2.jpg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="offset-lg-1 col-lg-6 col-md-12 col-sm-12 align-self-center" data-scroll-reveal="enter right move 30px over 0.6s after 0.3s">
+					<img src="assets/images/photos/home/3.jpg" class="img-fluid float-right" alt="Title">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- 數字跳動區域 -->
+	<div class="parallax-counter">
+		<div class="parallax-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="count-item">
+							<strong>16</strong>
+							<span>穩定<br>歷年合作茶商</span>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="count-item">
+							<strong>200</strong>
+							<span>穩定<br>忠實顧客</span>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 團隊成員 -->
+	<section id="team" class="section">
+		<div class="container" >
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="center-heading">
+						<h2 class="section-title">製作團隊</h2>
+					</div>
+				</div>
+				<div class="offset-lg-3 col-lg-6">
+					<div class="center-text">
+						<p>期末報告拜託給我們過！</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-12 position-relative">
+					<div class="person-item">
+						<div class="img">
+							<img src="assets/images/photos/team/1.jpg" alt="">
+						</div>
+						<div class="content">
+							<div class="text">
+								<h5 class="user-name">許軒豪 Howard</h5>
+								<span>UI/UX Designer</span>
+								<ul class="social">
+									<li><a href="https://www.facebook.com/haomai.tw/"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="https://www.instagram.com/howard____hsu/"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/howardhsutw/"><i class="fa fa-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-sm-12 position-relative">
+					<div class="person-item active">
+						<div class="img">
+							<img src="assets/images/photos/team/2.jpg" alt="">
+						</div>
+						<div class="content">
+							<div class="text">
+								<h5 class="user-name">董承恩</h5>
+								<span>Developer</span>
+								<ul class="social">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-12 col-sm-12">
+					<img src="assets/images/footer-logo.png" class="logo" alt="" width="60%">
+					<div class="text">在進步的腳步，我們不曾停歇；在初衷的提醒上，我們不曾忘記。我們始終希望消費者能用合理的價格得到一杯料多實在的飲品。</div>
+					<ul class="social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-github"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+					<h5></h5>
+					<ul class="footer-nav">
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+					<h5></h5>
+					<ul class="footer-nav">
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-12">
+					<h5>網站聲明</h5>
+					<div class="text">
+						<p>本網站僅作為作業展示使用，內容和圖片皆擷取自網路，請勿作為其他用途。</p>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="copyright">© 2023 TKUEATS. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- ***** Footer End ***** -->
+
+
+
+	<!-- jQuery -->
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="assets/js/popper.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- Plugins -->
+	<script src="assets/js/scrollreveal.min.js"></script>
+	<script src="assets/js/parallax.min.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/jquery.counterup.min.js"></script>
+	<script src="assets/js/imgfix.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+	<!-- Global Init -->
+	<script src="assets/js/custom.js"></script>
+</body>
+</html>
